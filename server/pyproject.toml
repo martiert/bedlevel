@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "bedlevel"
+version = "0.1.0"
+description = "Bed leveling testing"
+authors = ["Martin Ertsås <martiert@gmail.com>"]
+license = "MIT"
+packages = [{include = "./bedlevel"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pyserial = "^3.5"
+aiohttp = "^3.8.1"
+
+[tool.poetry.urls]
+"github" = "https://github.com/martiert/bedlevel"
+
+[tool.poetry.scripts]
+bedlevel="bedlevel:__main__"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
