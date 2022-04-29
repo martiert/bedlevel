@@ -106,4 +106,4 @@ with Printer(port, [275, 280, 15, 10]) as printer:
 
     app = web.Application()
     app.add_routes(routes)
-    web.run_app(app, host='localhost')
+    web.run_app(app, port=3001)
